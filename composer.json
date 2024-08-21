@@ -1,0 +1,29 @@
+{
+  "name": "goldinteractive/craft-language-redirect",
+  "type": "craft-plugin",
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "goldinteractive\\languageredirect\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "_language-redirect",
+    "name": "Language Redirect",
+    "developer": "Goldinteractive",
+    "documentationUrl": ""
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
