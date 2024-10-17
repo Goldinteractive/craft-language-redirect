@@ -35,7 +35,7 @@ class LanguageRedirect extends Component
 
         $possibleSites = \Craft::$app->sites->getAllSites();
 
-        $currentUrl = rtrim($request->getAbsoluteUrl(), '/');
+        $currentUrl =  rtrim($request->getHostInfo().'/'. $request->getPathInfo(true),'/');
 
         foreach ($possibleSites as $possibleSite) {
             $tmpBaseUrl = rtrim($possibleSite->baseUrl, '/');
